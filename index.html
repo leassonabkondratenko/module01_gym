@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="android-chrome-icon" type="image/png" sizes="192x192" href="img/favicon/android-chrome-192x192.png">    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">    
+    <link rel="android-chrome-icon" type="image/png" sizes="152x152" href="img/favicon/android-chrome-512x512.png">
+    <link rel="android-chrome-icon" type="image/png" sizes="150x150" href="img/favicon/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script defer src="js/modal.js"></script>
+    <script defer src="js/main.js"></script>
+    <title>GYM</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" id="headerTop"><!-- flex -->
+            <div class="header-items">
+                <a class="header-logo" href="#"></a>                
+                <!--нав бургера отключаем\ отключаем-->
+                <button class="header-burger" aria-label="открыть контакты" onclick="openModal('burgers')"></button><!-- flex -->                
+                <!--нав десктоп отключаем-->
+                <nav class="header-navigation">
+                    <ul class="header-nav">
+                        <li> <a class="nav-items" href="#menu">Мероприятия</a></li>
+                        <li> <a class="nav-items" href="#training">Расписание</a></li>
+                        <li> <a class="nav-items" href="#aboutCompany">О&nbsp;компании</a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+                <!-- иконки   -->
+                <ul class="header-social">
+                    <li> <a class="header-social-in" href="#"></a></li>       
+                    <li> <a class="header-social-fb" href="#"></a></li>
+                </ul>               
+        </header>
+
+    </div>
+    <!-- === меню === -->
+    <main>
+        <div class="container"> 
+            <section class="menu">                
+                <div class="menu-text">
+                    <h1 class="menu-title">онлайн тренировки любой сложности</h1>                    
+                    <div class="menu-title-flex">
+                        <div class="menu-title-flex-group">
+                            <p class="menu-item-text">&gt;&nbsp;15</p>
+                            <p class="menu-item-text">тренировок</p>
+                        </div>
+                        <div class="menu-title-p">                            
+                            <p class="menu-item-text-sport">в области спортивной физиологии и нутрициологии</p>
+                            <a class="menu-button" href="#training-btn">Узнать подробнее</a>                            
+                        </div>                        
+                    </div>
+                    <div class="menu-bg-mobil">
+                        <div class="menu-bg-mobil-fon1"></div>
+                        <div class="menu-bg-mobil-fon2"></div>
+                    </div>
+                    <a class="menu-arrow" href="#menu"></a>
+                </div>
+                <div class="menu-visual">
+                    <div class="box-gradient-left"></div>
+                    <div class="box-gradient-right"></div>
+                    <!-- <img class="menu-girl" src="img/@2x/Image-1-screen@2x.svg" alt="бегущая девушка в спортивном костюме"> -->
+                    <img class="menu-girl" src="img/@2x/girl.png" alt="бегущая девушка в спортивном костюме">
+                </div>
+                
+            </section>
+        </div>
+        <!-- второй блок -->
+        <div class="events">
+            <div class="container">            
+            <h3 class="menu-titles" id="menu">Ближайшие события</h3>
+            
+            <section class="menu-greeds">
+                <!-- Марафон выносливости -->
+                <div class="menu-grid-box-marafon">
+                    <div class="menu-grid-gradient">
+                        <div class="menu-grid-maraphon-text">                            
+                            <span class="menu-grid-data">29.06 - 4.07</span>
+                            <h3 class="menu-grid-title">Марафон выносливости</h3>
+                            <span class="menu-grid-maraphon-mrf">марафон</span>
+                            <button type="button" href="#modal-popup" class="menu-grid-btn open-popup present__order-btn">Учавствовать</button>
+                            <button href="#modal-popup" class="menu-grid-btn-add open-popup"></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Как стать тренером? -->
+                <div class="menu-grid-box-veb1">
+                    <div class="menu-grid-gradient">
+                        <div class="menu-grid-maraphon-text">
+                            <span class="menu-grid-data">9.07</span>
+                            <h3 class="menu-grid-title">Как стать тренером?</h3>
+                            <span class="menu-grid-maraphon-mrf">вебинар</span>
+                            <button class="menu-grid-btn-add open-popup" href="#modal-popup"></button>
+                            <button class="menu-grid-btn open-popup" href="#modal-popup">Учавствовать</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Йога, как стиль жизни -->                
+                <div class="menu-grid-box-veb2">
+                    <div class="menu-grid-gradient">
+                        <div class="menu-grid-maraphon-text">
+                            <span class="menu-grid-data">15.07</span>
+                            <h3 class="menu-grid-title">Йога, как стиль жизни</h3>
+                            <span class="menu-grid-maraphon-mrf">вебинар</span>
+                            <button class="menu-grid-btn-add open-popup" href="#modal-popup"></button>
+                            <button class="menu-grid-btn open-popup" href="#modal-popup">Учавствовать</button>
+                        </div>
+                    </div>
+                </div>        
+            </section>
+        </div>
+            <!-- Расписание тренировок -->
+            <section class="training">                
+                <div class="container">
+                    <div class="training-nedelya">
+                        <div class="training-titles">
+                            <h3 class="training-title" id="training-btn">Расписание тренировок</h3>
+                            <p class="training-data">22 - 28 июня</p>
+                        </div>
+                        <div class="training-flex" id="training">
+                            <!-- 1 functional-training -->
+                            <div class="functional-training">
+                                <span class="training-date">22 июня, 10:00</span>
+                                <div class="training-block">
+                                    <img class="training-image" src="img/icons/body.svg" width="65" height="65"   alt="торс спортсмена">
+                                    <div class="training-box">
+                                        <p class="training-text paddng">Функциональный тренинг</p>
+                                        <p class="menu-text-span">Развивает в мышцах силу, гибкость и тонус.</p>                                    
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <!-- 2  power-mix -->
+                            <div class="functional-training active">
+                                <span class="training-date training-active-data">23 июня, 10:00</span>
+                                <div class="training-block">
+                                    <img class="training-image" src="img/icons/jump.svg" width="67" height="107" alt="скакалка">
+                                    <div class="training-box">
+                                        <p class="training-text text-2">Силовой микс</p>                                    
+                                        <p class="menu-text-span training-active-data-text">Упражнения помогут создать красивый рельеф и прийти в&nbsp;спортивную форму.</p>                                                                    
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- 3  body-sculpt -->
+                            <div class="functional-training">
+                                    <span class="training-date">24 июня, 10:00</span>
+                                    <div class="training-block">
+                                        <img class="training-image" src="img/icons/bottle.svg" width="42" height="85" alt="бутылка">
+                                        <div class="training-box">
+                                            <p class="training-text">Body sculpt</p>                                        
+                                            <p class="menu-text-span">Разноплановая нагрузка помогает укрепить мышцы и снизить количество жировых отложений.</p>                                        
+                                        </div>
+                                    </div>                                    
+                                </div>             
+                                <!-- 4 breathing-practices -->
+                            <div class="functional-training">
+                                <span class="training-date">25 июня, 11:00</span>
+                                <div class="training-block">
+                                    <img class="training-image" src="img/icons/heart.svg" width="65" height="61"   alt="сердце">
+                                    <div class="training-box">
+                                        <p class="training-text paddng">Дыхательные практики</p>                                    
+                                        <p class="menu-text-span">Поможет прояснить ум и избавить организм от гормонов стресса.</p>                                    
+                                    </div>
+                                </div>                                    
+                            </div> 
+                            <!-- 5  l-a-b -->
+                            <div class="functional-training">
+                                <span class="training-date">26 июня, 11:00</span>
+                                <div class="training-block">
+                                    <img class="training-image" src="img/icons/dumbbell.svg" width="91" height="51"   alt="гантели">
+                                    <div class="training-box">
+                                        <p class="training-text">L.A.B.</p> <!-- paddng -->                                    
+                                        <p class="menu-text-span">Силовая тренировка с акцентом на мышцы ягодиц, ног и пресса.</p>                                    
+                                    </div>
+                                </div>                                
+                            </div>
+                            <!-- 6 комплексная разминка -->
+                            <div class="functional-training">
+                                <span class="training-date">27 июня, 10:00</span>
+                                <div class="training-block">
+                                    <img class="training-image" src="img/icons/weight.svg" width="58" height="66"   alt="гиря">
+                                    <div class="training-box">
+                                        <p class="training-text">Комплексная разминка</p>                                    
+                                        <p class="menu-text-span">Подготовка тела перед физической нагрузкой.</p>                                    
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>    
+        <section class="mailing">
+            <div class="mailing-item">
+                    <h3 class="mailing-title">Подпишитесь на&nbsp;рассылку</h3>
+                <form class="mailing-form" name="mailing" action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="post" enctype="multipart/form-data">        
+                    <div class="mailing-item-flex">
+                        <div class="mailing-argee">
+                            <input class="mailing-input" type="email" name="mailing"  title="Например, username@mail.ru" placeholder="Ваш e-mail" required>
+                            <!-- pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" -->
+                            <input class="mailing-checkbox" type="checkbox" name="agree" id="thing" required>
+                            <label for="thing" class="mailing-label" required>
+                                Согласен с обработкой <a class="mailing-person"  href="#" target="_blank">персональных данных</a>
+                            </label>
+                        </div>
+                        <button type="submit" class="mailing-button" name="mailing">ПОДПИСАТЬСЯ</button>                    
+                    </div>
+                </form>
+            </div>
+        </section>            
+        <section class="company">
+            <div class="container">
+                <div class="company-blok">
+                    <div class="company-flex">
+                        <div class="company-flex-text">
+                            <h3 class="company-title" id="aboutCompany">О компании</h3>
+                            <p class="company-text">Наша компания является одной из немногих, кто предлагает фитнес услуги онлайн! Оставайтесь с&nbsp;нами и вы сами увидите, что мы проводим не&nbsp;только онлайн-тренировки.</p>
+                            <a class="company-button mobile-hidden-desctop">Записаться</a>
+                            <div class="company-flex-img">
+                                <img class="company-flex-img-bg" src="img/@2x/trainer@2x.png" width="581" height="335"  alt="тренер">                 
+                            </div>                        
+                        </div>                    
+                        <ul class="company-blok-2">
+                            <li>
+                                <div class="company-describ"></div>
+                                <p class="company-blok-2-title">Экономия времени</p>
+                                <p class="company-blok-2-text">Не нужно тратить время на&nbsp;дорогу</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Индивидуальный подход</p>
+                                <p class="company-blok-2-text">Внимание тренера пренадлежит только вам</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Экономия денег</p>
+                                <p class="company-blok-2-text">Средняя цена одной тренировки - 700₽</p>
+                            </li>
+                            <li>
+                                <p class="company-blok-2-title">Опытный персонал</p>
+                                <p class="company-blok-2-text">Стаж работы у наших тренеров от&nbsp;5&nbsp;лет</p>
+                            </li>                        
+                        </ul>
+                        <div class="mobile-hidden">
+                            <a class="company-button">Записаться</a>
+                            <div class="company-img"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>        
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <div class="footer-flex">
+                <div class="footer-nav">
+                    <div class="header-logo">
+                    </div>                
+                    <ul class="footer-nav-flex">
+                        <li><a class="footer-ankor" href="#menu">Мероприятия</a></li>
+                        <li><a class="footer-ankor" href="#training">Расписание</a></li>
+                        <li><a class="footer-ankor" href="#aboutCompany">О&nbsp;компании</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <div class="footer-contacts-email">
+                        <a class="footer-contacts-a" href="mailto:info@freefit.com">info@freefit.com</a>                    
+                    </div>
+                    <ul class="footer-social">
+                        <li> <a class="footer-social-in" href="#"></a></li>       
+                        <li> <a class="footer-social-fb" href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2020, Все права защищены</p>        
+                <p class="footer-frontend-blok">Сделано в рамках курса учебной платформы <a class="frontend-blok"  href="https://cabinet.annblok.ru/" target="_blank">Annblok</a></p>
+            </div>
+        </div>        
+    </footer>
+    <!-- Mobile pop up -->
+    <div class="modal-window" id="modal">
+        <div class="modal">
+            <div class="wrap">
+                <div class="header-modal">
+                    <div class="header-modal-logo"></div>
+                    <button onclick="closeModal()" class="header-modal-close"></button>
+                </div>
+                <ul class="modal-nav">
+                    <li><a href="#menu" class="modal-nav-a modal-border">Мероприятия</a></li>
+                    <li><a href="#training" class="modal-nav-a modal-border">Расписание</a></li>
+                    <li><a href="#aboutCompany" class="modal-nav-a">О&nbsp;компании</a></li>
+                </ul>
+                <ul class="modal-item">
+                    <li><a href="#" class="modal-social-in"></a></li>
+                    <li><a href="#" class="modal-social-fb"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- pop up marafhon     -->
+    <div class="popup__bg" id="modal-popup">    
+        <div class="popup">
+            <button onclick="closeModal()" class="popup-close close-popup"></button>
+            <div class="popup-title">
+                <h2 class="popup-text">Заявка на участие «Марафон выносливости»</h2>
+                <p class="popup-desc">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+            </div>
+            <form class="popup-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <div class="input-container">            
+                    <input class="popup-mail" type="email" name="popup" id="" placeholder="Ваш e-mail" required maxlength="20" autocomplete="tel-national" autofocus="">
+                    <p class="popup-text-hidden">Некорректный адрес e-mail</p>                
+                    <input class="popup-tel" type="tel" name="popup" id="" placeholder="+7 (" required>
+                    <p class="popup-text-hidden">Некорректный номер телефона</p>
+                </div>
+                <button class="pupup-btn" type="submit" title="Отправить" name="popup">Отправить</button>
+            </form>    
+        </div>
+    </div>
+    <a href="#headerTop" class="button-up hidden" id="btnUp"></a>
+</body>
+</html>
